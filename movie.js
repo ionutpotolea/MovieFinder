@@ -1,5 +1,5 @@
 var imdbID = window.location.search.split("=")[1]
-var myURL = `http://www.omdbapi.com/?plot=full&apikey=aad72dfe&r=json&i=${imdbID}`
+var myURL = `https://www.omdbapi.com/?plot=full&apikey=aad72dfe&r=json&i=${imdbID}`
 const movieDetails = document.getElementById('movieDetailsWrapper');
 window.onload = () => {
     fetchData();

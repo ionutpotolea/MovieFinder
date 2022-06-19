@@ -28,7 +28,7 @@ maxResults.addEventListener("change", () => {
 
 function fetchData(){
     resultsSection.innerHTML = "";
-    getResource(`http://www.omdbapi.com/?plot=full&apikey=aad72dfe&r=json&type=movie&s=${userInput.value}`)
+    getResource(`https://www.omdbapi.com/?plot=full&apikey=aad72dfe&r=json&type=movie&s=${userInput.value}`)
     .then(function(responsePromise) {
         if (responsePromise.Response !== "False"){
             availablePages = 1+parseInt((responsePromise.totalResults-1)/10);
@@ -36,7 +36,7 @@ function fetchData(){
                 if (i === 1+(maxResults.value/10)){
                     break
                 } else {
-                    getResource(`http://www.omdbapi.com/?plot=full&apikey=aad72dfe&r=json&type=movie&page=${i}&s=${userInput.value}`)
+                    getResource(`https://www.omdbapi.com/?plot=full&apikey=aad72dfe&r=json&type=movie&page=${i}&s=${userInput.value}`)
                     .then(function(responsePromise) {
                     displayResults(responsePromise)
                 })
