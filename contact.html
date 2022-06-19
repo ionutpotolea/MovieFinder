@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <h1 class="logo"><a href="index.html">Movies Finder</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contactWrapper">
+        <div class="contact">
+            <h2>Contact us</h2>
+            <h3>Feel free to contact us</h3>
+        </div>
+
+        <form id="contactForm">
+            <fieldset>
+                <div class="formLeft">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter name..." maxlength="70">
+                        <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email...">
+                        <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject..." maxlength="70">
+                        <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <div class="formRight">
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" rows="11" cols="40"
+                            placeholder="Enter message..."></textarea>
+                        <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <button type="submit">Send message</button>
+                </div>
+            </fieldset>
+        </form>
+        <div id="successful">
+            <i class="fa fa-check-circle"></i>
+            <span id="successfulMsg">Thank you for contacting us!</span>
+            <a href="#" class="close" id="closeX">&#10006;</a>
+        </div>
+        <div class="contactSocialMedia">
+            <span>Or find us on social media</span>
+            <ul>
+                <li><a href="https://www.facebook.com/ionut.potolea">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+                <li><a href="https://www.instagram.com/ionutpotolea">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+</html>

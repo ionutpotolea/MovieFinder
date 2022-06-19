@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <h1 class="logo"><a href="index.html">Movies Finder</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="searchWrapper" class="initial">
+            <p>Movies Finder</p>
+            <div class="hr"></div>
+            <div id="searchContainer" class="initial">
+                <p>Search for a movie using the form below</p>
+                <div class="form-control">
+                    <form id="form">
+                        <label for="userInput"><i class="fas fa-search"></i></label>
+                        <input type="text" name="search" id="userInput" placeholder="Search for movies...">
+                        <button type="submit">Search</button>
+                        <div id="maxResultsWrapper" class="initial">
+                            <label for="maxResults">Maximum results: </label>
+                            <select name="maxResults" id="maxResults">
+                                <option value="10">10</option>
+                                <option value="30" selected>30</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                        <small id="errorMsg" style="display: none">Error Message</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section id="resultsSectionWrapper">
+
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="functions.js"></script>
+</body>
+
+</html>
